@@ -1,0 +1,149 @@
+<html>
+<fieldset><title>Registration form</title>
+<head>
+
+<script>
+function validateForm() {
+    var x = document.forms["form"]["Name (first)"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<center>
+<h1>Regirtration Form</h1></center><hr>
+<h3><center>Basic Information</center></h3>
+<body style="background-color:lightgray"> 
+
+<form name="form" onsubmit="return validateForm()" method="post">
+Name (First):<input type="text" name="Name (First)">
+Middle:<input type="text" name="Middle" >
+Last:<input type="text" name="Last"><br><br><br>
+
+Father's name:<input type="text" name="father's name">
+Mother's name:<input type="text" name="Mother's name"><br><br>
+
+<form action="action_page.php">
+Date of birth (dd):<select name="Date of birth (dd):" >
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5" selected>5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+
+(MM):<select name="(MM):" >
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+
+(YY):<select name="(YY):" >
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>                              
+<option value="2000">2000</option>
+                         
+</select><br><br>
+
+Gender:<input type="radio" name="sex" value="male" checked >male
+<input type="radio" name="sex" value="female" checked>female
+<br><br>
+
+Religion:<select name="Religion:" required>
+<option value="hindu">hindu</option>
+<option value="muslim">muslim</option>
+<option value="other">other</option>
+</select>
+<hr>
+<h3><center>Declaration Regarding Physical Fitness</center></h3>
+
+Eyesight:<select name="Eyesight:">
+<option value="Normal">Normal</option>
+<option value="Weak">Weak</option></select>
+
+Height:<input type="text" name="Height:"><br><br>
+Weight:<input type="text" name="Weight:"> 
+Chest:<input type="text" name="Chest:"><br><br><br>
+
+<hr>
+<h3><center>Correspandance Address</center></h3>
+Address :<input type="text" name="Address :" >
+
+&nbsp;&nbsp;&nbsp; State :<select name="State :" >
+<option value="None">None</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Gujrat">Gujrat</option>
+<option value="UP">UP</option>
+<option value="MP">MP</option>
+</select><br><br>
+
+locality :<input type="text" name="locality :">
+Pin:<input type="text" name="Pin :">
+email ID:<input type="text" name="email ID:" >
+
+
+<hr><fieldset>
+<h3><center>Permenant Address</center></h3>
+Address :<input type="text" name="Address :">
+
+&nbsp;&nbsp;&nbsp; State :<select name="State :" >
+<option value="None">None</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Gujrat">Gujrat</option>
+<option value="UP">UP</option>
+<option value="MP">MP</option>
+</select><br><br>
+
+locality :<input type="text" name="locality :">
+Pin:<input type="text" name="Pin :">
+email ID:<input type="text" name="email ID:"></fieldset><br><br><br><br><br>
+
+
+<center>
+<input type="Submit" value="Submit" ></center>
+</form><</fieldset>>
+</body></html>
+
