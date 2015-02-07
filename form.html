@@ -3,29 +3,38 @@
 <head>
 
 <script>
-function validateForm() {
-    var x = document.forms["form"]["Name (first)"].value;
-    if (x == null || x == "") {
-        alert("Name must be filled out");
-        return false;
+ function formValidator()
+ {
+   var name = document.getElementById("F_Name").value;
+   var mid=document.getElementById("Middle").value;
+   var l=document.getElementById("Last").value;
+   if ((name== "") || (mid=="") || (l="")) //wanted to check for alphabets only.
+    {
+         alert("fill this field");
+         return false; //doesnt go to next.php
     }
+    else
+	{
+	 alert("ok"); 
+	 return true;
+	 }
 }
 </script>
 </head>
 <center>
-<h1>Regirtration Form</h1></center><hr>
+<h1>Regirtration Form</h1></center><hr><fieldset>
 <h3><center>Basic Information</center></h3>
 <body style="background-color:lightgray"> 
 
-<form name="form" onsubmit="return validateForm()" method="post">
-Name (First):<input type="text" name="Name (First)">
-Middle:<input type="text" name="Middle" >
-Last:<input type="text" name="Last"><br><br><br>
+<form name="form" onsubmit="return formValidator()" >
+Name (First):<input type="text" id="F_Name" >
+Middle:<input type="text" id="Middle" >
+Last:<input type="text" id="Last"><br><br><br>
 
 Father's name:<input type="text" name="father's name">
 Mother's name:<input type="text" name="Mother's name"><br><br>
 
-<form action="action_page.php">
+<form >
 Date of birth (dd):<select name="Date of birth (dd):" >
 <option value="1">1</option>
 <option value="2">2</option>
@@ -96,8 +105,8 @@ Religion:<select name="Religion:" required>
 <option value="hindu">hindu</option>
 <option value="muslim">muslim</option>
 <option value="other">other</option>
-</select>
-<hr>
+</select></fieldset>
+<hr><fieldset>
 <h3><center>Declaration Regarding Physical Fitness</center></h3>
 
 Eyesight:<select name="Eyesight:">
@@ -106,9 +115,9 @@ Eyesight:<select name="Eyesight:">
 
 Height:<input type="text" name="Height:"><br><br>
 Weight:<input type="text" name="Weight:"> 
-Chest:<input type="text" name="Chest:"><br><br><br>
+Chest:<input type="text" name="Chest:"><br><br><br></fieldset>
 
-<hr>
+<hr><fieldset>
 <h3><center>Correspandance Address</center></h3>
 Address :<input type="text" name="Address :" >
 
@@ -122,7 +131,7 @@ Address :<input type="text" name="Address :" >
 
 locality :<input type="text" name="locality :">
 Pin:<input type="text" name="Pin :">
-email ID:<input type="text" name="email ID:" >
+email ID:<input type="text" name="email ID:" ></fieldset>
 
 
 <hr><fieldset>
